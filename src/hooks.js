@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { reactQuestions } from './triviaQuestions/reactQuestions'
+import { reactQuestions, mongodbQuestions } from './triviaQuestions'
 import { shuffle } from 'lodash'
 
-const triviaQuestions = shuffle([...reactQuestions])
+const triviaQuestions = shuffle([...reactQuestions, ...mongodbQuestions])
 
 export const useEggHuntProps = () => {
     const [modalOpen, setModalOpen] = useState(false)
@@ -37,7 +37,8 @@ export const useEggHuntProps = () => {
     const revealAnswer = () => {
       setResult(currentEgg.answer)
       // crack the egg
-      eggs[currentEgg.id].cracked = true
+      const filteredEggs = eggs.filter(egg => egg.id !== currentEgg.id)
+      setEggs(filteredEggs)
     }
 
     const getRandomColor = () => {
