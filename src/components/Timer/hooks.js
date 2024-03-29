@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 export const useTimerProps = (props) => {
     const { onClose} = props
-    const [timer, setTimer] = useState(15);
+    const [timer, setTimer] = useState(60);
     const [isRunning, setIsRunning] = useState(false);
   
     const startTimer = () => {

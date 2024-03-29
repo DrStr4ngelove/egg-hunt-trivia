@@ -47,8 +47,15 @@
   margin: 10px;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   cursor: pointer;
-  box-shadow: 0 0 30px rgb(250, 238, 1); /* Add shadow */
+  box-shadow: 0 0 30px rgb(219, 213, 101); /* Add shadow */
   border: 2px solid #ffffff; /* Add border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: cursive;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+  color: rgb(250, 238, 1);
 }
 
 .cracked {
@@ -56,10 +63,10 @@
 }
 
 .title {
-  color: white;
+  color: rgb(255, 242, 0);
   font-size: 4em;
   font-family: cursive;
-  text-shadow: 4px 4px 4px black;
+  text-shadow: 8px 8px 4px black;
 }
 
 .modal {
@@ -72,6 +79,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background:rgba(0, 0, 0, 0.8)
 }
 
 .modal-content {
@@ -106,6 +114,7 @@
   padding: 10px;
   font-size: large;
   font-family: cursive;
+  cursor: pointer;
 }
 
 button {

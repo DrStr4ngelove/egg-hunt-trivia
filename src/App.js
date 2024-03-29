@@ -13,7 +13,6 @@ function EggHunt() {
     revealAnswer,
     eggs,
     currentEgg,
-    getRandomColor
   } = useEggHuntProps()
 
   return (
@@ -21,10 +20,11 @@ function EggHunt() {
       <Header />
       <div className="egg-container">
         {eggs.map((egg, index) => (
-          <div className={egg.cracked ? "cracked" : "egg"} 
+          <div className={"egg"} 
             key={index} 
             style={{...egg.style}}
               onClick={() => showModal(egg)}>
+                {egg.id}
           </div>
         ))}
       </div>
