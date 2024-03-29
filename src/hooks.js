@@ -1,15 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { reactQuestions } from './triviaQuestions/reactQuestions'
 import { shuffle } from 'lodash'
 
-const triviaQuestions = shuffle([...reactQuestions, ...reactQuestions])
+const triviaQuestions = shuffle([...reactQuestions])
 
 export const useEggHuntProps = () => {
     const [modalOpen, setModalOpen] = useState(false)
-    const [currentQuestion, setCurrentQuestion] = useState({})
+    const [currentEgg, setCurrentEgg] = useState({})
     const [result, setResult] = useState('')
-    const showModal = (question) => {
-      setCurrentQuestion(question)
+    const [eggs, setEggs] = useState([])
+
+    useEffect(()=> {
+      const newEggs = triviaQuestions.map((egg, index) => ({
+          ...egg,
+          id: index, 
+          style: {
+            background: `linear-gradient(to bottom right, ${getRandomColor()}, #ffffff)` 
+          }
+        }
+      ))
+
+      setEggs(newEggs)
+
+    }, [])
+
+    const showModal = (egg) => {
+      setCurrentEgg(egg)
       setModalOpen(true)
     }
   
@@ -19,7 +35,9 @@ export const useEggHuntProps = () => {
     }
   
     const revealAnswer = () => {
-        setResult(currentQuestion.answer)
+      setResult(currentEgg.answer)
+      // crack the egg
+      eggs[currentEgg.id].cracked = true
     }
 
     const getRandomColor = () => {
@@ -38,8 +56,8 @@ export const useEggHuntProps = () => {
         showModal,
         closeModal,
         revealAnswer,
-        triviaQuestions,
-        currentQuestion,
+        eggs,
+        currentEgg,
         getRandomColor
     }
 }

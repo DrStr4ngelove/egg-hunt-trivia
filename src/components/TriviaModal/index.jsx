@@ -2,14 +2,14 @@
 import { Timer } from '../Timer'
 
 export const TriviaModal = (props) => {
-  const {closeModal, currentQuestion, revealAnswer, result } = props //useTriviaModalProps()
+  const {closeModal, currentEgg, revealAnswer, result } = props //useTriviaModalProps()
   return (
     <div className="modal">
       <div className="modal-content">
         <div className="modal-header">
           <Timer onClose={closeModal} />
         </div>
-        <p>{currentQuestion.question}</p>
+        <p>{currentEgg.question}</p>
         <button onClick={revealAnswer}>Show Answer</button>
         <p>{result}</p>
       </div>

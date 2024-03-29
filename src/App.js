@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useEggHuntProps } from './hooks'
 import { TriviaModal } from './components/TriviaModal'
 import { Header } from './components/Header'
@@ -11,24 +11,24 @@ function EggHunt() {
     showModal,
     closeModal,
     revealAnswer,
-    triviaQuestions,
-    currentQuestion,
+    eggs,
+    currentEgg,
     getRandomColor
-} = useEggHuntProps()
+  } = useEggHuntProps()
+
   return (
     <div className="container">
       <Header />
       <div className="egg-container">
-        {triviaQuestions.map((question, index) => (
-          <div className="egg" 
+        {eggs.map((egg, index) => (
+          <div className={egg.cracked ? "cracked" : "egg"} 
             key={index} 
-            style={{ 
-              background: `linear-gradient(to bottom right, ${getRandomColor()}, #ffffff)` }}
-              onClick={() => showModal(question)}>
+            style={{...egg.style}}
+              onClick={() => showModal(egg)}>
           </div>
         ))}
       </div>
-      {modalOpen && <TriviaModal currentQuestion={currentQuestion} result={result} closeModal={closeModal} revealAnswer={revealAnswer} />}
+      {modalOpen && <TriviaModal currentEgg={currentEgg} result={result} closeModal={closeModal} revealAnswer={revealAnswer} />}
     </div>
   );
 }
