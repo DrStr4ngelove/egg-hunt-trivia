@@ -34,6 +34,10 @@ export const nestjsQuestions = [
     {
       question: 'How does Nest.js handle error handling and exception filtering?',
       answer: 'In Nest.js, error handling can be done using built-in exception filters or custom exception filters. Exception filters are middleware-like functions that catch exceptions and handle them appropriately.'
+    },
+    {
+        question: 'What are injection scopes in Nest.js?',
+        answer: 'Injection scopes in Nest.js define the lifetime of a dependency. There are three injection scopes: Singleton, Transient, and Request. Singleton dependencies are created once and shared across the application, Transient dependencies are created each time they are requested, and Request dependencies are created for each incoming request.'
     }
   ];
   
