@@ -35,8 +35,4 @@ export const mongodbQuestions = [
       question: "What is indexing in MongoDB?",
       answer: "Indexing in MongoDB is the process of creating indexes to improve query performance."
     },
-    {
-      question: "What is the aggregation framework in MongoDB?",
-      answer: "The aggregation framework is a MongoDB feature that enables users to perform data aggregation operations on documents."
-    }
   ];

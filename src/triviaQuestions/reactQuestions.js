@@ -24,8 +24,12 @@ export const reactQuestions = [
       answer: "The useEffect() hook is used to perform side effects in functional components, such as data fetching, DOM manipulation, and subscriptions. It replaces componentDidMount(), componentDidUpdate(), and componentWillUnmount() lifecycle methods in class components by allowing components to manage side effects and cleanup logic in a more declarative and predictable way."
     },
     {
-      question: "What are some best practices for optimizing performance in React applications, particularly in terms of minimizing re-renders and improving rendering efficiency?",
-      answer: "Some best practices for optimizing performance in React applications include: Memoizing expensive calculations and rendering with useMemo() and React.memo(). Avoiding unnecessary re-renders by using shouldComponentUpdate() or React.memo() for functional components. Implementing code splitting and lazy loading to reduce initial bundle size and improve time-to-interactive (TTI). Optimizing network requests and data fetching with caching, pagination, and server-side rendering."
+      question: "When rendering a list using the JavaScript map() method, what is required for each element rendered?",
+      answer: "When rendering a list using the map() method, a unique key prop is required for each element rendered. The key prop helps React identify which items have changed, are added, or are removed, and improves performance by reducing unnecessary re-renders."
+    },
+    {
+      question: "What is the default local host port that a React development server uses?",
+      answer: "3000."
     }
   ]
   

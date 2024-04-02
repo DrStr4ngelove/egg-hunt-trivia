@@ -4,8 +4,8 @@ export const javascriptQuestions = [
       answer: 'A closure is a function that retains access to variables from its lexical scope even after the scope has exited.'
     },
     {
-      question: 'Explain event bubbling and event capturing in JavaScript.',
-      answer: 'Event bubbling is the process where events propagate from the innermost element to the outermost element. Event capturing is the opposite, where events propagate from the outermost element to the innermost element.'
+      question: 'What is event bubbling in JavaScript.',
+      answer: 'Event bubbling is the process where events propagate from the innermost element to the outermost element.'
     },
     {
       question: 'What are promises in JavaScript?',
@@ -24,7 +24,7 @@ export const javascriptQuestions = [
       answer: 'Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during compilation.'
     },
     {
-      question: 'Explain the concept of currying in JavaScript.',
+      question: 'What is currying in JavaScript.',
       answer: 'Currying is the process of converting a function that takes multiple arguments into a sequence of functions that each take a single argument.'
     },
     {

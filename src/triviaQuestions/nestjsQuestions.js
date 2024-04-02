@@ -12,7 +12,7 @@ export const nestjsQuestions = [
       answer: 'Modules in Nest.js are used to organize the application into logical units. Each module can encapsulate controllers, providers, and other related components. Modules can import and export functionality to other modules.'
     },
     {
-      question: 'Explain the role of middleware in Nest.js applications.',
+      question: 'What is the role of middleware in Nest.js applications.',
       answer: 'Middleware in Nest.js is a function that runs before or after the processing of a request. It can modify the request or response objects, execute additional logic, or terminate the request early.'
     },
     {

@@ -4,19 +4,19 @@ import {
   mongodbQuestions,
   reactQuestions,
   typescriptQuestions,
-  demosphereQuestions,
   movieQuestions,
-  nestjsQuestions
+  nestjsQuestions,
+  codeQuestions
 } from './triviaQuestions'
 import { shuffle, flatten } from 'lodash'
 
 const triviaQuestions = shuffle(
   flatten([
+    codeQuestions,
     javascriptQuestions,
     mongodbQuestions,
     reactQuestions,
     typescriptQuestions,
-    demosphereQuestions,
     movieQuestions,
     nestjsQuestions
   ])
