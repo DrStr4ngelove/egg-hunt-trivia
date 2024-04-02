@@ -79,7 +79,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background:rgba(0, 0, 0, 0.8)
+  background:rgba(0, 0, 0, 0.6)
 }
 
 .modal-content {
@@ -88,12 +88,13 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: center;
-  width: 65%;
+  width: 50%;
 }
 
 .modal-header {
   background-color: white;
   text-align: center;
+  height: 4rem;
 }
 
 .timer {
@@ -108,13 +109,15 @@
 .times-up {
   color: red;
   font-weight: bolder;
+  font-size: 2rem;
 }
 
 .close {
-  padding: 10px;
-  font-size: large;
+  padding-left: 50px;
+  font-size: 1.25rem;
   font-family: cursive;
   cursor: pointer;
+  padding-right: 10px
 }
 
 button {

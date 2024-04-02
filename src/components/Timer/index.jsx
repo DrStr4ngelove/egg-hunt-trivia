@@ -9,12 +9,13 @@ export const Timer = (props) => {
     
     const clockStyle = {
         color: timer <= 10 ? 'red': 'black',
+        fontSize:  timer <= 10 ? '2rem' : '1.25rem'
     }
 
     return (
     <div className={'timer'}>
         <p className="clock" style={clockStyle}>{timer} sec</p>
-        {timer === 0 && <p className="times-up">TIMES UP!!!</p>}
+        {timer === 0 && <p className="times-up">TIMES UP!</p>}
         <span className="close" onClick={onClose}>X</span>
     </div>
     )

@@ -24,7 +24,7 @@ function EggHunt() {
             key={index} 
             style={{...egg.style}}
               onClick={() => showModal(egg)}>
-                {egg.id}
+                {egg.cracked ? null : index+1}
           </div>
         ))}
       </div>

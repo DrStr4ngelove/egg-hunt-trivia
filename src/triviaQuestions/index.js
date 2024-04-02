@@ -1,2 +1,7 @@
 export * from './reactQuestions'
 export * from './mongodbQuestions'
+export * from './javascriptQuestions'
+export * from './demosphereQuestions'
+export * from './movieQuestions'
+export * from './typescriptQuestions'
+export * from './nestjsQuestions'
