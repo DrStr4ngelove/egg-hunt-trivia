@@ -15,17 +15,5 @@ export const codeQuestions = [
         question: "What method should be used to get all documents from a cursor using mongosh?",
         answer: `db.<collection>.find().toArray();`
     },
-    {
-        question: "What are the three main 'simple types' in TypeScript?",
-        answer: "Boolean, Number, and String"
-    },
-    {
-        question: "______ is similar to 'any', but a safer alternative when uncertain about the type.",
-        answer: "unknown"
-    },
-    {
-        question: "________ an interface will have the same properties as that interface.",
-        answer: "Extending"
-    },
   ]
   

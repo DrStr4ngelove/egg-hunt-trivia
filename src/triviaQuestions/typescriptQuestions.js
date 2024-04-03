@@ -34,7 +34,19 @@ export const typescriptQuestions = [
     {
       question: 'What is a namespace in TypeScript and when should it be used?',
       answer: 'Used to organize code into logical groups. It helps prevent naming conflicts and provides a way to encapsulate code.'
-    }
+    },
+    {
+      question: "What are the three main 'simple types' in TypeScript?",
+      answer: "Boolean, Number, and String"
+  },
+  {
+      question: "______ is similar to 'any', but a safer alternative when uncertain about the type.",
+      answer: "unknown"
+  },
+  {
+      question: "________ an interface will have the same properties as that interface.",
+      answer: "Extending"
+  },
   ];
   
   
