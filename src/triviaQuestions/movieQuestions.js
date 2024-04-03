@@ -13,7 +13,7 @@ export const movieQuestions = [
     },
     {
         question: "In the movie the 2001: A Space Odysee, what is the name of the AI computer that goes rogue?",
-        answer: "HAL 9000 (Heuristically Programmed Algorithmic Computer)"
+        answer: "HAL 9000 (Heuristically Programmed Algorithmic Computer). Each letter of HAL is one letter before IBM."
     },
     {
         question: "In the movie the Scanners, how did Cameron Vale hack into the computer?",
@@ -28,7 +28,7 @@ export const movieQuestions = [
         answer: "Skynet"
     },
     {
-        question: "In the movie the The Net, what was the name of the AI computer that was used to steal the identity of the main character?",
+        question: "In the movie the The Net, what was the name of the security system that was used to steal the identity of the main character?",
         answer: "Gatekeeper"
     }
   ]
