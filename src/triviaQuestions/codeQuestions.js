@@ -4,8 +4,8 @@ export const codeQuestions = [
         answer: "2 because Ruby rounds down when dividing integers."
     }, 
     {
-        question: "Which numeric type is a valid MongoDB BSON type?",
-        answer: "32-bit integer"
+        question: "Which numeric types are valid MongoDB BSON types?",
+        answer: "32-bit integer, 64-bit Integer, Decimal128, Double"
     },
     {
         question: "The name is a.log, the owner of the file is applicationA, the size of the file is 1KB, and the file was deleted. What command will properly add this document to the files collection using mongosh?",
