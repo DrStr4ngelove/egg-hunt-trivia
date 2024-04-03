@@ -13,7 +13,7 @@ export const codeQuestions = [
     },
     {
         question: "What method should be used to get all documents from a cursor using mongosh?",
-        answer: `db.inventory.find().toArray();`
+        answer: `db.<collection>.find().toArray();`
     },
     {
         question: "What are the three main 'simple types' in TypeScript?",

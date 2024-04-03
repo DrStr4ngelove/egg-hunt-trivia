@@ -16,8 +16,8 @@ export const javascriptQuestions = [
       answer: 'Generators are functions that can be paused and resumed. They allow you to generate a sequence of values lazily, on demand.'
     },
     {
-      question: 'What are arrow functions in JavaScript and how do they differ from regular functions?',
-      answer: 'Arrow functions are a concise way to write functions in JavaScript. They have a shorter syntax compared to regular functions and do not have their own `this`, `arguments`, `super`, or `new.target` bindings.'
+      question: 'What function denotation has implicit binding?',
+      answer: 'Arrow functions have implicit binding, meaning they inherit the context of their parent scope.'
     },
     {
       question: 'What is hoisting in JavaScript?',

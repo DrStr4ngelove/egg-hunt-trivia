@@ -24,8 +24,8 @@ export const nestjsQuestions = [
       answer: 'Interceptors in Nest.js are used to intercept incoming requests and outgoing responses. They can be used to modify or log requests, perform validation, or add additional functionality.'
     },
     {
-      question: 'What are pipes in Nest.js and how they are used.',
-      answer: 'Pipes in Nest.js are used to transform or validate input data before it is processed by a route handler. They can be synchronous or asynchronous and can modify the request payload.'
+      question: 'What are pipes in Nest.js and how they are used?',
+      answer: 'Used to transform or validate input data before it is processed by a route handler. They can be synchronous or asynchronous and can modify the request payload.'
     },
     {
       question: 'What is middleware context in Nest.js?',
@@ -36,8 +36,8 @@ export const nestjsQuestions = [
       answer: 'In Nest.js, error handling can be done using built-in exception filters or custom exception filters. Exception filters are middleware-like functions that catch exceptions and handle them appropriately.'
     },
     {
-        question: 'What are injection scopes in Nest.js?',
-        answer: 'Injection scopes in Nest.js define the lifetime of a dependency. There are three injection scopes: Singleton, Transient, and Request. Singleton dependencies are created once and shared across the application, Transient dependencies are created each time they are requested, and Request dependencies are created for each incoming request.'
+        question: 'What are the 3 injection scopes in Nest.js?',
+        answer: 'Singleton, Transient, and Request. Singleton dependencies are created once and shared across the application, Transient dependencies are created each time they are requested, and Request dependencies are created for each incoming request.'
     }
   ];
   

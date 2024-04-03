@@ -29,11 +29,11 @@ export const typescriptQuestions = [
     },
     {
       question: 'What are access modifiers in TypeScript and what do they do?',
-      answer: 'Access modifiers in TypeScript are keywords used to control the visibility and accessibility of class members. They include "public", "private", and "protected". "Public" members are accessible from outside the class, "private" members are only accessible within the class, and "protected" members are accessible within the class and its subclasses.'
+      answer: 'Keywords used to control the visibility and accessibility of class members. They include "public", "private", and "protected". "Public" members are accessible from outside the class, "private" members are only accessible within the class, and "protected" members are accessible within the class and its subclasses.'
     },
     {
       question: 'What is a namespace in TypeScript and when should it be used?',
-      answer: 'A namespace in TypeScript is used to organize code into logical groups. It helps prevent naming conflicts and provides a way to encapsulate code.'
+      answer: 'Used to organize code into logical groups. It helps prevent naming conflicts and provides a way to encapsulate code.'
     }
   ];
   
