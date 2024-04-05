@@ -15,5 +15,13 @@ export const codeQuestions = [
         question: "What method should be used to get all documents from a cursor using mongosh?",
         answer: `db.<collection>.find().toArray();`
     },
+    {
+        question: "What role do GraphQL subscriptions, WebSocket connections, and Apollo Link play in enabling reactive data updates in web applications with Apollo Client?",
+        answer: `GraphQL subscriptions enable real-time data updates, WebSocket connections provide persistent communication channels, and Apollo Link customizes the network stack to integrate WebSocket support seamlessly, facilitating reactive data flows.`
+    },
+    {
+        question: " How do GraphQL schema stitching and Apollo Federation enable modular and scalable GraphQL architectures, and what are their benefits?",
+        answer: `GraphQL schema stitching combines multiple schemas into a unified interface, promoting code reuse and modular development. Apollo Federation extends this concept by providing a standardized approach to composing distributed GraphQL services, facilitating the creation of microservices-based architectures with integrated GraphQL APIs.`
+    },
   ]
   

@@ -32,10 +32,6 @@ export const nestjsQuestions = [
       answer: 'Middleware context in Nest.js is an object that provides information about the incoming request and response. It includes properties such as the request method, URL, headers, and body.'
     },
     {
-      question: 'How does Nest.js handle error handling and exception filtering?',
-      answer: 'In Nest.js, error handling can be done using built-in exception filters or custom exception filters. Exception filters are middleware-like functions that catch exceptions and handle them appropriately.'
-    },
-    {
         question: 'What are the 3 injection scopes in Nest.js?',
         answer: 'Singleton, Transient, and Request. Singleton dependencies are created once and shared across the application, Transient dependencies are created each time they are requested, and Request dependencies are created for each incoming request.'
     }

@@ -17,7 +17,7 @@ export const movieQuestions = [
     },
     {
         question: "In the movie the Scanners, how did Cameron Vale hack into the computer?",
-        answer: "With his mind ('scanning' the computer with his psychic powers)"
+        answer: "Over the phone, with his mind ('scanning' the computer with his psychic powers)"
     },
     {
         question: "In the movie the Lawnmower man, what was the name of the AI computer that was used to enhance the intelligence of the main character?",

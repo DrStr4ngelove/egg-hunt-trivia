@@ -22,11 +22,7 @@ export const useTimerProps = (props) => {
     }, [isRunning]);
   
     useEffect(() => {
-      const timerId = setTimeout(() => {
-        startTimer();
-      }, 5000); // 5 second delay before starting timer
-  
-      return () => clearTimeout(timerId);
+      startTimer();
     }, []);
 
     return {

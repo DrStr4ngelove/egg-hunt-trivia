@@ -1,9 +1,5 @@
 export const javascriptQuestions = [
     {
-      question: 'What is closure in JavaScript?',
-      answer: 'A closure is a function that retains access to variables from its lexical scope even after the scope has exited.'
-    },
-    {
       question: 'What is event bubbling in JavaScript.',
       answer: 'Event bubbling is the process where events propagate from the innermost element to the outermost element.'
     },
